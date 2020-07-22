@@ -1,0 +1,8 @@
+main: me.gardeningtool.playerlist.PlayerList
+name: PlayerList
+author: Gardening_Tool
+version: 1.2
+commands:
+  list:
+    description: Lists all online players and staff members
+  

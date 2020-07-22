@@ -1,0 +1,11 @@
+General:
+  #The permission to use the command
+  Permission: "playerlist.list"
+  #The permission message a player will be sent if they do not have the permission to use the command
+  PermissionMessage: "&c&l(&7&l!&c&l) &7You don't have permission to do this!"
+  #Staff permission to be shown in /list
+  Staff: "playerlist.staff"
+  #The message to be sent when players run /list (supports multiple lines)
+  DisplayFormat:
+    - "&eThere are currently &d%staff &eand &d%players &eplayers online!"
+  
