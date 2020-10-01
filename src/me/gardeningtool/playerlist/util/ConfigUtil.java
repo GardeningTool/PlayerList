@@ -13,13 +13,19 @@ import org.bukkit.potion.PotionEffectType;
 import me.gardeningtool.playerlist.PlayerList;
 
 public class ConfigUtil {
+		
+	public static final String PERMISSION;
+	public static final String PERMISSION_MESSAGE;
+	public static final String STAFF_PERMISSION;
+	public static final List<String> DISPLAY_FORMAT;
 	
-	private static FileConfiguration config = PlayerList.getInstance().getConfig();
-	
-	public static final String PERMISSION = config.getString("General.Permission");
-	public static final String PERMISSION_MESSAGE = config.getString("General.PermissionMessage");
-	public static final String STAFF_PERMISSION = config.getString("General.Staff");
-	public static final List<String> DISPLAY_FORMAT = config.getStringList("General.DisplayFormat");
+	static {
+		FileConfiguration config = PlayerList.getInstance().getConfig();
+		PERMISSION = config.getString("General.Permission");
+		PERMISSION_MESSAGE = config.getString("General.PermissionMessage");
+		STAFF_PERMISSION = config.getString("General.Staff");
+		DISPLAY_FORMAT = config.getStringList("General.DisplayFormat");
+	}
 	
 	public static List<String> getFormattedMesssage() {
 		List<String> messages = new ArrayList<>();
